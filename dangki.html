@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tiepppp</title>
+    <style>
+        .form-control{
+            border-radius: 10px;
+            margin-bottom: 20px;
+            height: 40px;
+            width: 30%;
+        }
+       .form-group{
+            margin-bottom: 20px;
+        }
+        #submit{
+            background-color: blue;
+        }
+        h1{
+            text-align: center;
+            color: white;
+        }
+        .form-group{
+            margin-left: 32%;
+        }
+        label{
+            font-size: 30px;
+            width: 100px;
+            color: red;
+        }
+        input{
+            display: block;
+        }
+        input button{
+            background-color: blue;
+        }
+      body {
+   background-image: url("nen.jpg");
+   
+} 
+    </style>
+</head>
+<body>
+
+<h1> Đăng kí</h1>
+<div class="container">
+    <form action="" name="register-form">
+        <div class="form-group">
+            <label>Firtname</label>
+            <input type="text" name="firtname" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Lastname</label>
+            <input type="text" name="lastname" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Password</label>
+            <input type="password" name="password" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>avartar</label>
+            <input type="url" name="Avartar" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>gender</label >
+            <select name="gender">
+                <option>nam</option>
+                <option>nữ</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>email</label>
+            <input type="email" name="Email" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>địa chỉ</label>
+            <input type="text" name="diachi" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>birtday</label>
+            <input type="date" name="birtday" class="form-control">
+        </div>
+        <div class="form-group">
+            <input type="button" width="50px" height="auto" name="submit" value="submit" >
+            <input type="reset" name="reset" value="reset">
+        </div>
+    </form>
+</div>
+<scrip src="1.js"></scrip>
+</body>
+</html>

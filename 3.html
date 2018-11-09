@@ -60,13 +60,63 @@
             padding-top: 0.5%;
             font-weight: bold;
         }
+        .song-detail{
+            position: sticky;
+        }
+        h1{
+            
+            margin-right: 50px;
+        }
+        i{
+             font-size: 30px;
+        }
+        span{
+            font: 
+           
+        float: right;
+        border-radius: 5px;
+        color: white;
+        }
+        img{
+            float: left;
+        }
+        .song-player{
+            height: 260px;
+            background-color: pink;
+            background-position: top;
+        }
+        .list-song{
+            width: 100%;
+        }
+        #muiten{
+    position: fixed;
+    bottom: 90px;
+    right: 90px;
+
+    z-index: 9999;
+
+}
+    a{
+        font-size: 25px;
+float: right;
+}
     </style>
 </head>
 <body>
-    <h1>Song i like</h1>
+        <div id="muiten"><a href="#"><img style="width: 60px;" src="muiten.png"></a></div>
     <div class="song-player">
+        <img src="lololo.jpg">
+        <h1>Song i like</h1>
+        <div id="span">
+      <a href="day4.html" target="blank">Trang chủ</a>
+         <a href="dangki.html" target="blank">Đăng kí</a>
+        <a href="day4.html" target="blank">Đăng nhập</a>
+       <a href="#">Share
+        <alert="bạn chưa đăng nhập , không thể share , hãy vào đăng nhập"></a>
+    </div>
         <div class="song-detail">
-            <marquee behavior="scroll" direction="left">
+            <img src="lon.gif" width="60px" height="auto">
+            <marquee behavior="scroll" direction="left" >
                 <div class="current-song-title">
                     <span id="current-play-title"></span>
                 </div>
@@ -82,6 +132,8 @@
 
     <div class="list-song" id="list-song">
     </div>
+
     <script src="3.js"></script>
+
 </body>
 </html>

@@ -1,4 +1,6 @@
 var MY_API = 'https://2-dot-backup-server-002.appspot.com/_api/v2/songs/get-free-songs';
+var click=document.getElementById('span')
+click.onclick=function () {}
 var xmlHttpRequest = new XMLHttpRequest();
 xmlHttpRequest.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
@@ -20,6 +22,7 @@ xmlHttpRequest.onreadystatechange = function () {
         document.getElementById('list-song').innerHTML = content;
     }
 }
+
 xmlHttpRequest.open('GET', MY_API, true);
 xmlHttpRequest.send();
 
