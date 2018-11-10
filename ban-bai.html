@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>css</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    img{width: 50%;
+     
+    }
+    .s{
+        text-align: center;
+        background-color: red;
+    }
+    .banner{
+        width: 100%;
+        height: auto;
+    }
+.logo{
+    width: 242px;
+    border-radius: 5px red;
+    margin-bottom: 10px;
+}
+        *{
+            box-sizing: border-box;
+            font-size: 30px;
+        }
+        .row:after{
+            content: "";
+             clear: both;
+    display: table;
+    text-align: center;
+        }
+   [ class*='col-']{
+    float: left;
+   }
+   .form-control{
+   	border-radius: 5px red;
+   }
+   
+ @media only screen and (min-width: 600px) {
+
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+h1{
+    text-align: center;
+}
+input {
+    display:block
+}
+.form-control{
+	border-radius: 10px;
+}
+     </style>
+</head>
+<body>
+<div class="row">
+    <div class="col-9 col-s-12 banner" ><img src="aothuat.jpg" width="100%"></div> 
+<div class="col-3 col-s-12 logo" ><img src="bai.jpg" height="200px">Bài Tây</div>
+   
+</div>
+<div class="row">
+
+<div class=" container">
+    <h1> thông tin người dùng</h1>
+    <form action="" name="register-form">
+        <div class="form-group">
+            <label>Họ Tên</label>
+            <input type="text" name="firtname" class="form-control">
+        </div>
+        <div class=" form-group">
+            <label>Giới tính</label>
+            <input type="radio" name="password" class="form-control">nam
+             <input type="radio" name="password" class="form-control">nữ
+                <input type="radio" name="password" class="form-control">khác
+        </div>
+        <div class=" form-group">
+            <label>Phone</label>
+            <input type="url" name="phone" class="form-control">
+        </div>
+        <div class=" form-group">
+            <label>Sở thích </label >
+           <input type="checkbox" name="sothich" class="form-control">thể thao
+           <input type="checkbox" name="sothich" class="form-control">phim ảnh
+ <input type="checkbox" name="sothich" class="form-control">đọc sách 
+           <input type="checkbox" name="sothich" class="form-control">âm nhạc 
+           <input type="checkbox" name="sothich" class="form-control">khác
+        </div>
+        <div class="form-group"
+            <label>thêm lời nhắn</label>
+            <input type="email" name="them" class="form-control">
+        </div>
+    
+
+        <div class=" form-group">
+            <input type="button" name="submit" value="submit" >
+        </div>
+    </form>
+</div>
+</div>
+<div class="row "><div class="s">Hồ Quang Khải</div></div>
+</body>
+</html>
